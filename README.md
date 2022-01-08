@@ -1,122 +1,65 @@
-# Linear Search and Binary search
+# Find the maximum of a list of numbers
 ## Aim:
-To write a program to perform linear search and binary search using python programming.
+To write a program to find the maximum of a list of numbers.
 ## Equipment’s required:
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-## Linear Search:
-1.	Start from the leftmost element of array[] and compare k with each element of array[] one by one.
-2.	If k matches with an element in array[] , return the index.
-3.	If k doesn’t match with any of elements in array[], return -1 or element not found.
-## Binary Search:
-1.	Set two pointers low and high at the lowest and the highest positions respectively.
-2.	Find the middle element mid of the array ie. arr[(low + high)/2]
-3.	If x == mid, then return mid.Else, compare the element to be searched with m.
-4.	If x > mid, compare x with the middle element of the elements on the right side of mid. This is done by setting low to low = mid + 1.
-5.	Else, compare x with the middle element of the elements on the left side of mid. This is done by setting high to high = mid - 1.
-6.	Repeat steps 2 to 5 until low meets high
+1.	Get the list of marks as input
+2.	Use the sort() function or max() function or use the for loop to find the maximum mark.
+3.	Return the maximum value
 ## Program:
-i)	#Use a linear search method to match the item in a list.
-```
+
+i)	# To find the maximum of marks using the list method sort.
+```Python 
 ''' 
-Program for linear search method to match the item in a list
-Developed by: moahan raj
-RegisterNumber: 21001890
+Program to mark the maximum of marks using the list method sort
+Developed by: your name
+RegisterNumber: 
 '''
-
-def linearsearch(array, n, k):
-
-    for i in range(0, n):
-        if (array [i] == k):
-            return i
-    return -1
-
-array = eval(input())
-k =  eval(input())
-n = len(array)
-array.sort()
-result = linearsearch(array, n, k)
-if(result == -1):
-    print(array)
-    print("Element not found")
-else:
-    print(array)
-    print("Element found at index: ", result)
-
-
-
+def max_marks(marks):
+    #Write your code here
+    marks.sort()
+    large =marks[-1]
+    return(large)
+max_marks([88, 67, 77, 93, 95, 11, 67, 89, 56, 89])
 ```
-ii)	# Find the element in a list using Binary Search(Iterative Method).
-```
-
+ii)	# To find the maximum marks using the list method max().
+```Python
+``` 
 ''' 
-Program for linear search method to match the item in a list
-Developed by: moahan raj
-RegisterNumber: 21001890
+Program to find the maximum marks using the list method max().
+Developed by: your name
+RegisterNumber: 
 '''
-
-def linearsearch(array, n, k):
-
-    for i in range(0, n):
-        if (array [i] == k):
-            return i
-    return -1
-
-array = eval(input())
-k =  eval(input())
-n = len(array)
-array.sort()
-result = linearsearch(array, n, k)
-if(result == -1):
-    print(array)
-    print("Element not found")
-else:
-    print(array)
-    print("Element found at index: ", result)
-
-
-
+def max_marks(list1):
+    # write your code here
+    max1=list1[0]
+    for i in list1:
+        if i>max1:
+            max1 = i
+    return max1
+max_marks([88, 67, 77, 93, 95, 11, 67, 89, 56, 89])
 ```
-iii)	# Find the element in a list using Binary Search (recursive Method).
-```
-
+iii) # To find the maximum marks without using builtin functions.
+```Python
 ''' 
-Program for linear search method to match the item in a list
-Developed by: moahan raj
-RegisterNumber: 21001890
+Program to the maximum marks without using builtin functions.
+Developed by: your name
+RegisterNumber: 
 '''
-
-def linearsearch(array, n, k):
-
-    for i in range(0, n):
-        if (array [i] == k):
-            return i
-    return -1
-
-array = eval(input())
-k =  eval(input())
-n = len(array)
-array.sort()
-result = linearsearch(array, n, k)
-if(result == -1):
-    print(array)
-    print("Element not found")
-else:
-    print(array)
-    print("Element found at index: ", result)
-
-
-
+def max_marks(list1):
+    # write your code here
+    max1=list1[0]
+    for i in list1:
+        if i>max1:
+            max1=i
+    return max1
 ```
-## Sample Input and Output
+## Sample Input and output
+![git log](i2.png)
 
-![git log](mohan2.png)
-![git log](mohan3.png)
-
-
-
-
-
-## Result
-Thus the linear search and binary search algorithm is implemented using python programming.
+## Output:
+![git log](i2.png)
+## Result:
+Thus the program to find the maximum of given numbers from the list is written and verified using python programming.
