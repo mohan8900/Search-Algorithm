@@ -19,6 +19,30 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
+''' 
+Program for linear search method to match the item in a list
+Developed by: moahan raj
+RegisterNumber: 21001890
+'''
+
+def linearsearch(array, n, k):
+
+    for i in range(0, n):
+        if (array [i] == k):
+            return i
+    return -1
+
+array = eval(input())
+k =  eval(input())
+n = len(array)
+array.sort()
+result = linearsearch(array, n, k)
+if(result == -1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ", result)
 
 
 
@@ -26,7 +50,30 @@ i)	#Use a linear search method to match the item in a list.
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 
+''' 
+Program for linear search method to match the item in a list
+Developed by: moahan raj
+RegisterNumber: 21001890
+'''
 
+def linearsearch(array, n, k):
+
+    for i in range(0, n):
+        if (array [i] == k):
+            return i
+    return -1
+
+array = eval(input())
+k =  eval(input())
+n = len(array)
+array.sort()
+result = linearsearch(array, n, k)
+if(result == -1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ", result)
 
 
 
@@ -34,13 +81,38 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
+''' 
+Program for linear search method to match the item in a list
+Developed by: moahan raj
+RegisterNumber: 21001890
+'''
 
+def linearsearch(array, n, k):
+
+    for i in range(0, n):
+        if (array [i] == k):
+            return i
+    return -1
+
+array = eval(input())
+k =  eval(input())
+n = len(array)
+array.sort()
+result = linearsearch(array, n, k)
+if(result == -1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ", result)
 
 
 
 ```
 ## Sample Input and Output
 
+![git log](mohan2.png)
+![git log](mohan3.png)
 
 
 
