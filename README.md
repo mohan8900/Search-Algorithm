@@ -26,7 +26,6 @@ max_marks([88, 67, 77, 93, 95, 11, 67, 89, 56, 89])
 ```
 ii)	# To find the maximum marks using the list method max().
 ```Python
-``` 
 ''' 
 Program to find the maximum marks using the list method max().
 Developed by: your name
